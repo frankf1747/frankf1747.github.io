@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Frank </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <img src="assets/logo.svg" alt="logo" id="logo">
+            <ul>
+                <li><a href="home.html" class="active">HOME</a></li>     
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="process.html">PROCESS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="video-placeholder">
+        <video autoplay muted loop id="home-video">
+            <source src="assets/videos/home.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-caption">
+            <h1>Frank Fu</h1>
+            <p>Web Developer</p>
+    </section>
+
+    <main>
+        <section id="new-page-space">
+            <div class="content-container">
+                <h1>Hello, My name is <span id="name">Frank Fu.</span></h1>
+                <p id="iam">I am a </p><p id="switchable-text">Web Developer</p>
+
+            
+            <p id="bio"><img src = "assets\imgs\home.jpg" alt="myself" id="profile-photo">
+                I'm Frank Fu, a third-year student at the University of Toronto Mississauga (UTM), where my academic endeavors are focused on Technology, Coding Society (TCS), and Statistics. My passion for coding and data analysis is matched by my meticulous attention to detail, driving me to excel in complex problem-solving. Outside academia, I explore photography, travel, and sports, which not only fuel my creativity but also enhance my strategic thinking.
+                
+                At UTM, I've leveraged these interests into practical experiences, collaborating on projects that sharpen my technical skills and broaden my perspective. As I prepare for a future in the tech sector, I'm focused on applying my diverse skills to innovate and make a meaningful impact. My journey is one of continuous learning, aiming to blend my technical expertise with my passions to inspire and contribute to the field
+            </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-icons">
+            <a href="#" title="Email"><img src="assets/contact_svg/linkedin.svg" alt="LinkedIn Icon" class="icon"/></a>
+            <a href="#" target="_blank" title="Instagram"><img src="assets/contact_svg/ig.svg" alt="IG Icon" class="icon"/></a>
+            <a href="#" target="_blank" title="GitHub"><img src="assets/contact_svg/git.svg" alt="GitHub Icon" class="icon"/></a>
+
+
+
+
+        </div>
+
+
+        <div class="footer-container">
+            <ol>
+                <li><a href="#">Work</a></li>
+                <li> | </li>
+                <li><a href="#">Resume</a></li>
+                <li> | </li>
+                <li><a href="#">Contact</a></li>
+            </ol>
+        </div>
+
+        <p>Copyright &copy; 2024 Frank Fu</p>
+    </footer>
+
+    <script>
+        // script generated from ChatGpt
+        //ChatGPT. (2024, April 3). Assistance with dynamic text switching in HTML and JavaScript. OpenAI ChatGPT Session.
+        document.addEventListener('DOMContentLoaded', (event) => {
+        const textAndColors = [
+            {text: 'Web Developer.', color: '#BBDEFB'},
+            {text: 'Data Analyst.', color: '#B2DFDB'},
+            {text: 'Programmer.', color: '#F8BBD0'},
+            {text: 'Game Designer.', color: '#D1C4E9'},
+            {text: 'Photographer.', color: '#FFF9C4'}
+        ];
+        let currentIndex = 0;
+        const switchTextAndColor = () => {
+        const element = document.getElementById('switchable-text');
+        element.style.opacity = 0;
+        setTimeout(() => {
+            element.innerText = textAndColors[currentIndex].text;
+            element.style.color = textAndColors[currentIndex].color;
+            element.style.opacity = 1;
+            currentIndex = (currentIndex + 1) % textAndColors.length;
+        }, 500)};
+
+        switchTextAndColor();
+        setInterval(switchTextAndColor, 2500);
+            })
+        </script>
+</body>
+</html>

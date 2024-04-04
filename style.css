@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+background-color: #212121;
+}
+
+#logo {
+    width: 50px;
+    height: 70px;
+    margin-left: 32px;
+}
+
+.header-nav{
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    display: inline;
+    z-index: 2;
+}
+
+header .header-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-nav a.active {
+    color: rgb(0, 238, 255);
+}
+
+header .header-nav ul{
+    float: right;
+    margin-right: 22px;
+    margin-top: 30px;
+
+}
+
+header .header-nav ul li{
+    text-align: right;
+    margin: 10px;
+    font-family: "Lora", serif;
+    display: inline;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+#video-placeholder {
+    position: relative;
+}
+
+#home-video {
+    width: 100vw;
+    height: 100%;
+    
+}
+
+.video-caption {
+    position: absolute;
+    font-family: "Spectral", serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 238, 255);
+    font-size: 2.5em;
+    z-index: 2;
+    text-align: center;
+}
+.video-caption h1{
+    font-weight: 800;
+    font-style: normal;
+}
+
+.video-caption p{
+    font-size: 0.5em;
+    color: #fff;
+    margin-top: -20px;
+}
+
+#new-page-space {
+    margin-top: 90px;
+    padding: 32px;
+}
+
+#switchable-text {
+    color: #fff;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-container {
+    height: 850px;
+    margin-left: 156px;
+}
+
+.content-container h1{
+    color: white;
+    font-size: 3em;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+#name {
+    color: rgb(0, 238, 255);
+}
+
+
+#bio {
+    font-style: italic;
+    padding-top: 60px;
+    font-family: "Spectral", serif;
+    width: 100%;
+    color: white;
+}
+
+
+#profile-photo {
+    margin-top: -190px;
+    padding-left: 140px;
+    float: right;
+    height: 600px;
+    width: 400px;
+}
+
+.content-container #iam{
+    color: white;
+}
+
+.content-container #iam, #switchable-text{
+    display: inline;
+    font-size: 3.5em;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+footer {
+    background-color: #282828;
+    height: 250px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer ol{
+    padding: 10px 0 20px 0;
+}
+
+footer ol li{
+    font-family: "Spectral", serif;
+    display: inline;
+    margin: 5px;
+    color: #ffffff;
+}
+
+footer ol li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.contact-icons img.icon {
+    padding-top: 50px;
+    display: inline;
+    width: 36px;
+    height: 36px;
+    margin: 20px 10px;
+}
+
+
