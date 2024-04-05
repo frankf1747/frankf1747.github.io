@@ -21,7 +21,7 @@ background-color: #212121;
 }
 
 header .header-nav a {
-    color: #fff;
+    color: #d2d2d2;
     text-decoration: none;
     padding: 3px;
     font-size: 1em;
@@ -91,7 +91,7 @@ header .header-nav ul li{
 
 #new-page-space {
     padding: 0 344px;
-    margin-top: 90px;
+    margin-top: 150px;
 }
 
 #switchable-text {
@@ -120,7 +120,7 @@ header .header-nav ul li{
 #bio {
     font-style: italic;
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 300px;
     font-family: "Spectral", serif;
     color: white;
     max-height: 500px;
@@ -193,25 +193,27 @@ footer ol li a{
 }
 
 .img-container {
+    padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(12, 1fr); 
     gap: 20px;
   }
+
 .half1{
     grid-column: span 6;
-    height: 400px;
+    height: 350px;
     background-image: url("assets/imgs/zoo.jpg");
 }
 
 .half-half1{
     grid-column: span 3;
-    height: 400px;
+    height: 350px;
     background-image: url("assets/imgs/flower1.jpg");
 }
 
 .half-half2{
     grid-column: span 3;
-    height: 400px;
+    height: 350px;
     background-image: url("assets/imgs/flower2.jpg");
 }
 
@@ -219,11 +221,25 @@ footer ol li a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+    filter:sepia(20%);
+}
+
+.half1:hover, .half-half1:hover, .half-half2:hover, .row-vid:hover, .half2:hover, .half3:hover, .row-img:hover, .row-vid:hover{
+    transform: scale(1.02);
+    filter: none;
+
+}
+
+.row-vid:hover{
+    filter: none;
+
 }
 
 .row-vid{
     grid-column: span 12;
     height: auto;
+    filter:sepia(20%);
 }
 
 .background-video{
@@ -232,27 +248,27 @@ footer ol li a{
 
 .half2{
     grid-column: span 6;
-    height: 400px;
+    height: 380px;
     background-image: url("assets/imgs/chili.jpg");
 }
 .half3{
     grid-column: span 6;
-    height: 400px;
+    height: 380px;
     background-image: url("assets/imgs/plant.jpg");
 }
 
 .row-img{
+    transition: transform 0.3s ease-in-out;
+    filter:sepia(20%);
     background-position: top;
     background-size: cover;
     grid-column: span 12;
     height: 55vh;
     background-image: url("assets/imgs/luisa.jpg");
-
 }
 
 .project{
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 150px;
     width:1232px;
     margin: 0 auto;
 }
@@ -267,13 +283,13 @@ footer ol li a{
     padding: 4px;
     background-color:#69686825;
     border-radius: 8px;
-    
     color: rgb(193, 211, 248);
     font-size: 2em;
     font-family: "Spectral", serif;
 }
 
 .project-container{
+    padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(8, 1fr); 
     gap: 10px;
@@ -304,4 +320,55 @@ footer ol li a{
     grid-column: span 2;
     height: 350px;
     width: 100%;
+}
+
+.game{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    width:1232px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.game h1{
+    grid-column: span 4;
+    color: white;
+    font-size: 4em;
+    font-family: "Spectral", serif;
+}
+
+.game-p{
+    font-family: "Spectral", serif;
+    grid-column: span 4;
+    width: 606px;
+    color: white;
+}
+
+.project-3-img{
+    margin-top: -140px;
+    grid-column: span 4;
+    height: 350px;
+    width: 606px;
+}
+#holder{
+    grid-column: span 4;
+}
+
+#game-title{
+    grid-column: span 4;
+    height: 30px;
+    padding: 4px;
+    color: rgb(249, 231, 69);
+    font-size: 2em;
+    font-family: "Spectral", serif;
+}
+
+#game-des{
+    border-radius: 8px;
+    color: #fff;
+    padding:4px 30px;
+    grid-column: span 4;
+    font-style: italic;
 }
