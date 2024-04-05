@@ -6,6 +6,10 @@ body {
 background-color: #212121;
 }
 
+main {
+    padding: 0 156px;
+}
+
 #logo {
     width: 50px;
     height: 70px;
@@ -23,15 +27,26 @@ background-color: #212121;
 header .header-nav a {
     color: #fff;
     text-decoration: none;
+    padding: 3px;
+    font-size: 1em;
 }
 
 .header-nav a.active {
     color: rgb(0, 238, 255);
 }
 
+.header-nav a.active:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+.header-nav ul li a:hover{
+    background-color: #0eaefe8d;
+}
+
 header .header-nav ul{
     float: right;
-    margin-right: 22px;
+    margin-right: 19px;
     margin-top: 30px;
 
 }
@@ -44,7 +59,6 @@ header .header-nav ul li{
     font-size: 1em;
     font-weight: bold;
 }
-
 
 
 #video-placeholder {
@@ -81,7 +95,6 @@ header .header-nav ul li{
 
 #new-page-space {
     margin-top: 90px;
-    padding: 32px;
 }
 
 #switchable-text {
@@ -91,7 +104,6 @@ header .header-nav ul li{
 
 .content-container {
     height: 850px;
-    margin-left: 156px;
 }
 
 .content-container h1{
@@ -114,9 +126,8 @@ header .header-nav ul li{
     color: white;
 }
 
-
 #profile-photo {
-    margin-top: -190px;
+    margin-top: -140px;
     padding-left: 140px;
     float: right;
     height: 600px;
@@ -164,4 +175,130 @@ footer ol li a{
     margin: 20px 10px;
 }
 
+.gallery{
+    padding: 150px 0 0 0;
+    height: 1950px;
+}
 
+.gallery h1, .highlight{
+    display: inline;
+    color: white;
+    font-size: 4em;
+    font-family: "Spectral", serif;
+}
+
+#highlight{
+    color: rgb(0, 238, 255);
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px;
+  }
+.half1{
+    grid-column: span 6;
+    height: 400px;
+    background-image: url("assets/imgs/zoo.jpg");
+}
+
+.half-half1{
+    grid-column: span 3;
+    height: 400px;
+    background-image: url("assets/imgs/flower1.jpg");
+}
+
+.half-half2{
+    grid-column: span 3;
+    height: 400px;
+    background-image: url("assets/imgs/flower2.jpg");
+}
+
+.half1, .half-half1, .half-half2, .row-vid, .half2, .half3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row-vid{
+    grid-column: span 12;
+    height: auto;
+}
+
+.background-video{
+    width: 100%;
+}
+
+.half2{
+    grid-column: span 6;
+    height: 400px;
+    background-image: url("assets/imgs/chili.jpg");
+}
+.half3{
+    grid-column: span 6;
+    height: 400px;
+    background-image: url("assets/imgs/plant.jpg");
+}
+
+.row-img{
+    background-position: top;
+    background-size: cover;
+    grid-column: span 12;
+    height: 65vh;
+    background-image: url("assets/imgs/luisa.jpg");
+
+}
+
+.project{
+    height: 1000px;
+}
+
+.project h1{
+    color: white;
+    font-size: 4em;
+    font-family: "Spectral", serif;
+}
+
+#project-title{
+    padding: 4px;
+    background-color:#66656516;
+    border-radius: 8px;
+    
+    color: rgb(193, 211, 248);
+    font-size: 2em;
+    font-family: "Spectral", serif;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 10px;
+}
+
+.project-1-p{
+    font-family: "Spectral", serif;
+    color: white;
+    grid-column: span 4;
+    padding-left: 30px;
+}
+
+.project-1-img{
+    grid-column: span 2;
+    height: 350px;
+    width: 100%;
+}
+
+.project-2-p{
+    font-family: "Spectral", serif;
+    padding-top: 60px;
+    color: white;
+    grid-column: span 4;
+}
+
+.project-2-img{
+    padding-left:30px;
+    padding-top: 60px;
+    grid-column: span 2;
+    height: 350px;
+    width: 100%;
+}
