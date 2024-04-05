@@ -6,10 +6,6 @@ body {
 background-color: #212121;
 }
 
-main {
-    padding: 0 156px;
-}
-
 #logo {
     width: 50px;
     height: 70px;
@@ -94,6 +90,7 @@ header .header-nav ul li{
 }
 
 #new-page-space {
+    padding: 0 344px;
     margin-top: 90px;
 }
 
@@ -102,36 +99,39 @@ header .header-nav ul li{
     transition: opacity 0.5s ease-in-out;
 }
 
-.content-container {
-    height: 850px;
+.intro{
+    width: 700px;
 }
 
+.content-container{
+    margin:0 auto;
+    width: 1232px;
+}
 .content-container h1{
     color: white;
     font-size: 3em;
     line-height: 1.4;
     letter-spacing: 0.05em;
 }
-
 #name {
     color: rgb(0, 238, 255);
 }
 
-
 #bio {
     font-style: italic;
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 200px;
     font-family: "Spectral", serif;
-    width: 100%;
     color: white;
+    max-height: 500px;
 }
 
 #profile-photo {
     margin-top: -140px;
-    padding-left: 140px;
+    padding-left: 30px;
     float: right;
-    height: 600px;
-    width: 400px;
+    height: 750px;
+    width: 500px;
 }
 
 .content-container #iam{
@@ -176,8 +176,9 @@ footer ol li a{
 }
 
 .gallery{
-    padding: 150px 0 0 0;
-    height: 1950px;
+    width:1232px;
+    margin: 0 auto;
+    padding-top: 150px;
 }
 
 .gallery h1, .highlight{
@@ -244,13 +245,16 @@ footer ol li a{
     background-position: top;
     background-size: cover;
     grid-column: span 12;
-    height: 65vh;
+    height: 55vh;
     background-image: url("assets/imgs/luisa.jpg");
 
 }
 
 .project{
-    height: 1000px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    width:1232px;
+    margin: 0 auto;
 }
 
 .project h1{
@@ -261,7 +265,7 @@ footer ol li a{
 
 #project-title{
     padding: 4px;
-    background-color:#66656516;
+    background-color:#69686825;
     border-radius: 8px;
     
     color: rgb(193, 211, 248);
@@ -296,7 +300,6 @@ footer ol li a{
 }
 
 .project-2-img{
-    padding-left:30px;
     padding-top: 60px;
     grid-column: span 2;
     height: 350px;
