@@ -64,7 +64,6 @@ header .header-nav ul li{
 #home-video {
     width: 100vw;
     height: 100%;
-    
 }
 
 .video-caption {
@@ -107,7 +106,8 @@ header .header-nav ul li{
     margin:0 auto;
     width: 1232px;
 }
-.content-container h1{
+.content-container h1, #iam{
+    font-family: "Spectral", serif;
     color: white;
     font-size: 3em;
     line-height: 1.4;
@@ -222,13 +222,12 @@ footer ol li a{
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s ease-in-out;
-    filter:sepia(20%);
+    filter:sepia(30%);
 }
 
 .half1:hover, .half-half1:hover, .half-half2:hover, .row-vid:hover, .half2:hover, .half3:hover, .row-img:hover, .row-vid:hover{
     transform: scale(1.02);
     filter: none;
-
 }
 
 .row-vid:hover{
@@ -239,7 +238,7 @@ footer ol li a{
 .row-vid{
     grid-column: span 12;
     height: auto;
-    filter:sepia(20%);
+    filter:sepia(30%);
 }
 
 .background-video{
@@ -360,7 +359,7 @@ footer ol li a{
     grid-column: span 4;
     height: 30px;
     padding: 4px;
-    color: rgb(249, 231, 69);
+    color: rgb(226, 206, 73);
     font-size: 2em;
     font-family: "Spectral", serif;
 }
@@ -371,4 +370,178 @@ footer ol li a{
     padding:4px 30px;
     grid-column: span 4;
     font-style: italic;
+}
+
+.resume-intro{
+    width:1232px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 500px;
+}
+
+.int{
+    padding-top: 100px;
+    color: white;
+    font-size: 4em;
+    font-family: "Spectral", serif;
+}
+
+.int2{
+    padding-top: 20px;
+    color: white;
+    font-size: 4em;
+    font-family: "Spectral", serif;
+}
+
+
+
+.switchable-text{
+    font-size: 4em;
+    font-family: "Spectral", serif;
+    color: #BBDEFB;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#resume-photo{
+    height: 850px;
+    width: 700px;
+    float: right;
+}
+
+#resume-conno{
+    background-image: url("assets/imgs/spotlight-resume.png");
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#resume-container{
+    padding-top: 50px;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    width:1232px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#resume-name{
+    grid-column: span 4;
+    font-size: 4em;
+    font-family: "Spectral", serif;
+    color: rgb(226, 206, 73);
+}
+
+
+#aboutme{
+    grid-column: span 12;
+    font-family: "Spectral", serif;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#resume-contact{
+    grid-column: span 10;
+    margin-top: -20px;
+    font-family: "Spectral", serif;
+    color: #e7e8c5;
+    font-size: 1em;
+    padding-bottom: 25px;
+}
+
+#aboutme h1{
+    color: #BBDEFB;
+    font-size: 1.6em;
+    font-family: "Spectral", serif;
+}
+
+#aboutme p{
+    background-color: #6165694b;
+    padding: 35px;
+}
+
+#skill-title, #experience-title, #projects-title{
+    grid-column: span 4;
+    color: #BBDEFB;
+    font-size: 1.6em;
+    font-family: "Spectral", serif;
+    padding-top: 25px;
+    margin-bottom: -20px;
+}
+
+#edu-title{
+    margin-bottom: -20px;
+    grid-column: span 12;
+    color: #BBDEFB;
+    font-size: 1.6em;
+    font-family: "Spectral", serif;
+    padding-top: 25px;
+}
+
+
+#skills{
+    grid-column: span 4;
+    background-color: #414644;
+    padding: 25px;
+    font-family: "Spectral", serif;
+    color: white;
+    font-size: 1em;
+
+}
+
+#skills h3, #experience h3, #project h3{
+    font-size: 1.2em;
+    color: #eaeca6;
+}
+
+#experience {
+    padding: 25px;
+    grid-column: span 4;
+    font-family: "Spectral", serif;
+    color: white;
+    background-color: #2E303B;
+}
+
+#experience p{
+    font-size: 0.9em;
+}
+
+#experience ul{
+    margin-top: -10px;
+    font-size: 1em;
+}
+
+
+#project {
+    padding: 25px;
+    grid-column: span 4;
+    font-family: "Spectral", serif;
+    color: white;
+    background-color: #3E3939;
+    font-size: 1em;
+}
+
+#edu-date{
+    color: white;
+    font-family: "Spectral", serif;
+    font-size: 1em;
+    float: right;
+}
+
+#education{
+    font-size: 1em;
+    font-family: "Spectral", serif;
+    color: white;
+}
+
+#education p{
+    padding: 15px 25px;
+}
+
+#edu-container{
+    grid-column: span 12;
+    background-color: #6165694b;
 }

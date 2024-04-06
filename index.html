@@ -44,7 +44,7 @@
                     <h1>Hello, My name is <span id="name">Frank Fu.</span></h1>
                     <p id="iam">I am a </p><p id="switchable-text">Web Developer</p>
                 </div>
-            <img src = "assets\imgs\home.jpg" alt="Frank's Picture" id="profile-photo">    
+            <img src = "assets/imgs/home.jpg" alt="Frank's Picture" id="profile-photo">    
 
 
             
@@ -63,12 +63,7 @@
             <a href="#" title="linkedin"><img src="assets/contact_svg/linkedin.svg" alt="LinkedIn Icon" class="icon"/></a>
             <a href="#" target="_blank" title="Instagram"><img src="assets/contact_svg/ig.svg" alt="IG Icon" class="icon"/></a>
             <a href="#" target="_blank" title="GitHub"><img src="assets/contact_svg/git.svg" alt="GitHub Icon" class="icon"/></a>
-
-
-
-
         </div>
-
 
         <div class="footer-container">
             <ol>
@@ -88,11 +83,11 @@
         //ChatGPT. (2024, April 3). Assistance with dynamic text switching in HTML and JavaScript. OpenAI ChatGPT Session.
         document.addEventListener('DOMContentLoaded', (event) => {
         const textAndColors = [
-            {text: 'Web Developer.', color: '#BBDEFB'},
             {text: 'Data Analyst.', color: '#B2DFDB'},
             {text: 'Programmer.', color: '#F8BBD0'},
             {text: 'Game Designer.', color: '#D1C4E9'},
-            {text: 'Photographer.', color: '#FFF9C4'}
+            {text: 'Photographer.', color: '#FFF9C4'},
+            {text: 'Web Developer.', color: '#BBDEFB'}
         ];
         let currentIndex = 0;
         const switchTextAndColor = () => {
