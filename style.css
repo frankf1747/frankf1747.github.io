@@ -89,7 +89,6 @@ header .header-nav ul li{
 }
 
 #new-page-space {
-    padding: 0 344px;
     margin-top: 150px;
 }
 
@@ -103,7 +102,7 @@ header .header-nav ul li{
 }
 
 .content-container{
-    margin:0 auto;
+    margin: 0 auto;
     width: 1232px;
 }
 .content-container h1, #iam{
