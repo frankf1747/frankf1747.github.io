@@ -98,6 +98,7 @@ header .header-nav ul li{
 }
 
 #switchable-text {
+    font-family: "Spectral", serif;
     color: #fff;
     transition: opacity 0.5s ease-in-out;
 }
