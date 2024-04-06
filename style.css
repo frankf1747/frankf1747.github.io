@@ -26,7 +26,7 @@ main{
 }
 
 header .header-nav a {
-    color: #d2d2d2;
+    color: rgb(226, 206, 73);
     text-decoration: none;
     padding: 3px;
     font-size: 1em;
@@ -67,7 +67,7 @@ header .header-nav ul li{
 }
 
 #home-video {
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -125,7 +125,7 @@ header .header-nav ul li{
 #bio {
     font-style: italic;
     padding-top: 40px;
-    padding-bottom: 300px;
+    padding-bottom: 320px;
     font-family: "Spectral", serif;
     color: white;
     max-height: 500px;
@@ -156,6 +156,12 @@ footer {
     text-align: center;
     color: #ffffff;
 }
+
+footer p{
+    color: rgb(0, 238, 255);
+    font-family: "Spectral", serif;
+}
+
 
 footer ol{
     padding: 10px 0 20px 0;
@@ -328,7 +334,7 @@ footer ol li a{
 
 .game{
     padding-top: 150px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     display: grid;
     grid-template-columns: repeat(8, 1fr); 
     width:1232px;
@@ -384,6 +390,18 @@ footer ol li a{
     padding-bottom: 500px;
 }
 
+.side{
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    color:white;
+    position: fixed;
+    left: 0px;
+    padding-top: 32px;
+    top: 50%;
+    transform:rotate(-90deg);
+    transform-origin: left top;
+}
+
 .int{
     padding-top: 100px;
     color: white;
@@ -397,8 +415,6 @@ footer ol li a{
     font-size: 4em;
     font-family: "Spectral", serif;
 }
-
-
 
 .switchable-text{
     font-size: 4em;
@@ -559,4 +575,36 @@ footer ol li a{
 .school{
     font-size: 1.2em;
     color: #eaeca6;
+}
+
+#video-placeholder-contact{
+    z-index: 0;
+    position: relative;
+}
+
+#contact-video{
+    width: 100%;
+    height: 100%;
+}
+
+.comment-form{
+
+}
+
+.comment-form label{
+    display: block;
+}
+
+.comment-form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.submit-button{
+    display: block;
+    margin: 10px 0;
+    border: 2px solid #000;
 }
