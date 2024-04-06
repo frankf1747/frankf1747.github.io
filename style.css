@@ -6,6 +6,11 @@ body {
 background-color: #212121;
 }
 
+main{
+    width: 1232px;
+    margin: 0 auto;
+}
+
 #logo {
     width: 50px;
     height: 70px;
@@ -451,6 +456,11 @@ footer ol li a{
     padding-bottom: 25px;
 }
 
+#resume-contact a{
+    text-decoration: none;
+    color: #e7e8c5;
+}
+
 #aboutme h1{
     color: #BBDEFB;
     font-size: 1.6em;
@@ -543,4 +553,9 @@ footer ol li a{
 #edu-container{
     grid-column: span 12;
     background-color: #6165694b;
+}
+
+.school{
+    font-size: 1.2em;
+    color: #eaeca6;
 }
