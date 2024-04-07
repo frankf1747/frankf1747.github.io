@@ -476,7 +476,7 @@ footer ol li a{
 
 #resume-contact a{
     text-decoration: none;
-    color: #e7e8c5;
+    color: rgb(189, 226, 235);
 }
 
 #aboutme h1{
@@ -585,7 +585,7 @@ footer ol li a{
 }
 
 #form-container{
-    padding-top: 70px;
+    
     height: 1100px;
     background-image: url("assets/imgs/contact-bg.png");
     background-repeat: no-repeat;
