@@ -26,7 +26,7 @@ main{
 }
 
 header .header-nav a {
-    color: rgb(226, 206, 73);
+    color: rgb(214, 202, 123);
     text-decoration: none;
     padding: 3px;
     font-size: 1em;
@@ -391,6 +391,7 @@ footer ol li a{
 }
 
 .side{
+    opacity: 60%;
     letter-spacing: 0.1em;
     font-size: 1.1em;
     color:white;
@@ -577,34 +578,297 @@ footer ol li a{
     color: #eaeca6;
 }
 
-#video-placeholder-contact{
-    z-index: 0;
-    position: relative;
+.contact-page{
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
-#contact-video{
-    width: 100%;
-    height: 100%;
+#form-container{
+    padding-top: 70px;
+    height: 1100px;
+    background-image: url("assets/imgs/contact-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 }
 
-.comment-form{
-
+#comment-form{
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 1232px;
 }
 
-.comment-form label{
+#comment-form label{
     display: block;
+    padding: 20px 0 5px 0;
+    font-size: 1em;
+    font-family: "Spectral", serif;
+    color: rgb(255, 255, 255);
 }
 
-.comment-form input{
+#comment-form h1, #location h1{
+    font-size: 5em;
+    font-family: "Spectral", serif;
+    color: rgb(255, 255, 255);
+
+}
+
+#form-content{
+    padding-left: 616px;
+}
+
+#form-content p{
+    color: white;
+    font-size: 1em;
+    font-family: "Spectral", serif;
+    padding-right: 60px;
+}
+
+#form-content a{
+    text-decoration: none;
+    color: rgb(189, 226, 235);
+}
+
+#comment-form input, #comment-form textarea{
     margin-bottom: 20px;
     padding: 10px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgba(3, 3, 3, 0.19);
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
+}
+
+#firstName, #lastName, #message{
+    color: rgb(189, 226, 235);
+}
+
+#comment-form textarea{
+    width: 596px;
+    height: 200px;
 }
 
 .submit-button{
+    cursor: pointer;
+    color: white;
     display: block;
+    margin-top: 10px;
+    margin-left: 556px;
+
+}
+
+.submit-button:hover{
+    color:rgb(189, 226, 235);
+    background-color: rgba(3, 3, 3, 0.254);
+}
+
+#location{
+    height: 700px;;
+    width: 1232px;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+#location iframe{
+    float: right;
+}
+
+#location p{
+    color:rgb(189, 226, 235);
+    padding-right: 686px;
+    font-size: 1em;
+    font-family: "Spectral", serif;
+}
+#process-header{
+    padding-bottom: 100px;
+}
+#process-spotlight {
+    background-image: url(assets/imgs/plant.jpg);
+    width: 100%;
+    height: 430px;
+    background-size: cover;
+    background-position: center left;
+}
+
+#process-spotlight h1{
+    padding-top: 260px;
+    padding-left: 32px;
+    width: 800px;
+    color: white;
+    font-size: 5em;
+    font-family: "Spectral", serif;
+}
+
+.process-container{
+    width: 1232px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(85, 40px);
+    gap: 15px;
+}
+
+.process-container .des-right{
+    color: white;
+    font-size: 1em;
+    font-family: "Spectral", serif;
+    grid-column-start: 8;
+    grid-column-end: span 4;
+}
+
+.des-right p{
+    padding-top: 15px;
+    grid-row-start: 2;
+    font-family: "Spectral", serif;
+}
+
+.line{
+    grid-column: span 1;
+    grid-row: 1 / -1;
+    width: 10px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#circle1{
+    position: fixed;   
+    margin-left: 23px; 
+    width: 40px;
+    height: 40px;
+    background-color: rgb(189, 226, 235);
+    border-radius: 50%;
+}
+
+.des-right h2, #phase2-des h2, #phase3-des h2{
+    font-family: "Spectral", serif;
+    color: rgb(189, 226, 235);
+}
+
+#phase2-des, #phase3-des{
+    color: white;
+    font-family: "Spectral", serif;
+}
+
+#phase2-des p, #phase3-des p{
+    padding-top: 15px;
+}
+
+#imageStack {
+    position: relative;
+    cursor: pointer;
+    grid-column-start: 3;
+    grid-column-end: span 4;
+    grid-row: 2/10 ;
+}
+
+#pic-caption{
+    grid-column: 6/8;
+    grid-row-start: 9;
+    margin-top: 15px;
+    padding-top: 5px;
+    text-align: right;
+    color: white;
+    font-style: italic;
+}
+
+.stack-image {
+    width: 507px;
+    height: 400px;
+}
+
+table.list{
+    grid-row-start: 11;
+    grid-column: 3 / 12;
+    border: 1px solid #000000;
+
+}
+table.list tr td, 
+table.list tr th{
+    border: 1px dotted #515151;
+    padding: 8px;
+    margin: 4px;
+}
+
+table.list tr th{
+    background-color: #888585;
+    font-size: .8em;
+}
+
+.list td{
+    color: white;
+}
+
+table.list caption{
+    caption-side: bottom;
+    color: white;
     margin: 10px 0;
-    border: 2px solid #000;
+    font-style: italic;
+}
+
+#phase2-des{
+    grid-column-start: 3;
+    grid-column-end: span 4;
+    grid-row-start: 18;
+    grid-row-end: span 6;
+}
+
+#imageStack2{
+    cursor: pointer;
+    grid-row-start: 19;
+    grid-row-end: span 8;
+    grid-column-start: 7;
+    grid-column-end: span 4;
+}
+
+#imageStack3{
+    cursor: pointer;
+    grid-row-start: 29;
+    grid-row-end: span 8;
+    grid-column-start: 3;
+    grid-column-end: span 6;
+}
+
+#phase3-des{
+    grid-column-start: 8;
+    grid-column-end: span 4;
+    grid-row-start: 28;
+    grid-row-end: span 6;
+}
+
+#phase2-des a, #phase3-des a{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(189, 226, 235);
+}
+
+#phase4-des{
+    color: white;
+    font-family: "Spectral", serif;
+    grid-row-start: 38;
+    grid-row-end: span 10;
+    grid-column: 3/12;
+}
+
+#phase4-des h2{
+    color: rgb(189, 226, 235);
+    font-size: 2em;
+}
+
+#coding, #WCAG1{
+    padding-top: 15px;
+    width: 100%;
+}
+
+#phase4-des p{
+    padding: 15px 0;
+}
+
+#WCAG2{
+    padding-top:5px;
+    width: 100%;
+}
+
+#phase4-des iframe{
+    padding: 15px 0;
 }

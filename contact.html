@@ -26,45 +26,46 @@
             </ul>
         </nav>
     </header>
+    <main class="contact-page">
+    <section id="form-container"> 
+        <form id="comment-form">    
+            <div id="form-content">
+                <h1>Get In Touch .</h1>
+                <p>Feel free to contact me for further information. Whether you have questions, need advice, or want to discuss a potential project, I'm here to help. You can reach me directly through <a href= "mailto: frankfu1747@gmail.com"> Frankfu1747@gmail.com</a>, or fill out the form below for a quick response. </p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
     
-    <section id="video-placeholder-contact">
-        <video autoplay muted loop id="contact-video">
-            <source src="assets/videos/home.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+    
+                <label for="message">Please leave a message: </label>
+                <textarea name="message" rows="10" cols="60" id="message"></textarea>
+                <input type="submit" class="submit-button">
+            </div>
+        </form>
     </section>
 
-    <main>
-       
-        <form class="comment-form">
-            <label for="firstName">First Name:</label>
-            <input type="text" name="firstName"  id="firstName">
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" name="lastName"  id="lastName">
+    <section id="location">
+        <h1>Location <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11566.979719367728!2d-79.66057854311524!3d43.549358627626894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1712429975433!5m2!1sen!2sca" width="616" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h1>
+        <p>As a University of Toronto Mississauga (UTM) student, I reside in Mississauga, Ontario, during the academic year. Over the summer breaks, I return to China, splitting my time between Beijing and Shanghai. Whether you're interested in connecting in Mississauga, Beijing, or Shanghai, please feel free to reach out.
+        </p>
+        
 
-            <label for="message">Please enter your message</label>
-            <textarea name="message" rows="10" cols="60" id="message"></textarea>
-            <input type="submit" class="submit-button">
-
-    </form>
-
+    </section>
 
     </main>
-
-
-
     <footer>
         <div class="contact-icons">
-            <a href="#" title="linkedin"><img src="assets/contact_svg/linkedin.svg" alt="LinkedIn Icon" class="icon"/></a>
-            <a href="#" target="_blank" title="Instagram"><img src="assets/contact_svg/ig.svg" alt="IG Icon" class="icon"/></a>
-            <a href="#" target="_blank" title="GitHub"><img src="assets/contact_svg/git.svg" alt="GitHub Icon" class="icon"/></a>
+            <a href="https://www.linkedin.com/in/frank-fujiajun/" target="_blank" title="linkedin"><img src="assets/contact_svg/linkedin.svg" alt="LinkedIn Icon" class="icon"/></a>
+            <a href="https://www.instagram.com/frankkk_sn" target="_blank" title="Instagram"><img src="assets/contact_svg/ig.svg" alt="IG Icon" class="icon"/></a>
+            <a href="https://github.com/frankf1747" target="_blank" title="GitHub"><img src="assets/contact_svg/git.svg" alt="GitHub Icon" class="icon"/></a>
         </div>
 
 
         <div class="footer-container">
             <ol>
-                <li><a href="worl.html">Work</a></li>
+                <li><a href="work.html">Work</a></li>
                 <li> | </li>
                 <li><a href="resume.html">Resume</a></li>
                 <li> | </li>
@@ -74,5 +75,14 @@
 
         <p>Copyright &copy; 2024 Frank Fu</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('comment-form').onsubmit = function(event) {
+                event.preventDefault();
+                alert('Thank you for contacting me! We will be in touch soon.');
+            };
+        });
+    </script>
 </body>
 </html>
